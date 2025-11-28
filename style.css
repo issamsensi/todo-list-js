@@ -1,0 +1,114 @@
+:root{
+    --principal: hsl(239, 94%, 19%);
+}
+
+body{
+    background: var(--principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.todo{
+    max-width: 1200px;
+    min-width: 500px;
+    color: white;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: hsla(190, 77%, 88%, 0.219);
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul li:hover{
+    color: hwb(191 83% 4%);
+}
+
+.head ul li.active{
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+    border-top: 1px solid hsla(190, 77%, 88%);
+    border-bottom: 1px solid hsla(190, 77%, 88%);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.task-item{
+    display: block;
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: background 180ms ease, transform 120ms ease;
+}
+.task-item:hover{
+    background: rgba(255,255,255,0.03);
+    transform: translateY(-2px);
+}
+.task-item .task-text{
+    flex: 1; /* take remaining space */
+}
+.task-item.completed .task-text{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.task-checkbox input[type='checkbox']{
+    transform: scale(1.2);
+    margin-left: 10px;
+}
+
+.no-tasks{
+    padding: 24px;
+    font-size: 18px;
+}
+
+.hint{
+    margin-top: 8px;
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+}
+#task{
+    width: 96%;
+    border: 1px solid hsla(190, 77%, 88%);
+    border-radius: 10px;
+    padding: 15px 8px;
+    background-color: hsla(190, 77%, 88%, 0.1);
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.clear{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: var(--principal);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.clear:hover{
+    background-color: hsl(239, 94%, 39%);
+}
