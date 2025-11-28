@@ -2,6 +2,9 @@
 
 Welcome to **ToDo List (JS)** — a small, keyboard-friendly todo list demo built with plain HTML, CSS, and JavaScript.
 
+## 🌐 Live Demo
+[View Demo](https://issamsensi.github.io/todo-list-js/)
+
 ## 🚀 Project Overview
 This project demonstrates a compact, keyboard-first todo list application that keeps data in the browser using `localStorage`. Tasks support filtering (All/Pending/Completed), keyboard operations, and persistence across reloads.
 
