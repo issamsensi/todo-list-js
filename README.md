@@ -30,8 +30,8 @@ style.css       # UI styles and layout
 ```
 
 ## 📸 Screenshots
-[screen](todolist.png)
-u
+![screen](todolist.png)
+
 ## ✨ How to Use
 1. Open `index.html` in a browser (or serve the folder with a simple static server):
 ```bash
